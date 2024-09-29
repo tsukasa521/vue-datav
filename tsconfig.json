@@ -5,6 +5,7 @@
         "module": "umd",
         "moduleResolution": "node",
         "strict": true,
+        "noImplicitAny": false,
         "jsx": "preserve",
         "jsxFactory": "h",
         "isolatedModules": false,
