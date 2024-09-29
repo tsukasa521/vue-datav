@@ -10,6 +10,7 @@ const uid = randomString();
 
 interface Props {
     num: number;
+    color?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), { num: 0 });
@@ -34,6 +35,10 @@ const displayModelValue = computed(() => {
     //     style: "currency",
     // });
 });
+const textColor = computed(() => {
+    return props.color;
+});
+
 let lastValue = props.num;
 let rafId = NaN;
 watch(
@@ -74,5 +79,6 @@ const danceNumber = (step: number, add: boolean) => {
 .bb-dance-number {
     font-family: ds-digi-b;
     font-size: 25px;
+    color: v-bind(textColor);
 }
 </style>
