@@ -295,3 +295,11 @@ export function px2vw(px: number, root: number = 1920, fixed = 6) {
 ## 总结
 
 第一次做可视化大屏项目，中间也是遇到过不少问题，把第一个项目及框架搭建的过程整理记录下来，希望对自己也对能看到这篇文章的小伙伴有一点帮助。
+
+```bash
+# node 18.19.1
+
+pnpm i
+
+pnpm dev:demo
+```

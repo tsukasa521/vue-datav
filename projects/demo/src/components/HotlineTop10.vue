@@ -8,7 +8,7 @@
                 <span class="hotline count flex_none">数据2</span>
             </div>
             <div v-if="datasRef" class="over_hidden w_100 border_box pdl_16 pdr_16 pdb_16">
-                <swiper :datas="datasRef" :scroll="false" :single-height="46">
+                <swiper :datas="datasRef" :scroll="true" :single-height="46">
                     <div
                         v-for="(item, index) in datasRef"
                         :key="index"
